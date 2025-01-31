@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pink heart balloons flying on violet sky_.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; 
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffffad;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.heart-container {
+    margin-bottom: 20px;
+    animation: heartAnimation 2s infinite alternate;
+}
+
+.heart-image {
+    width: 150px;
+    height: 150px;
+}
+
+.message h1 {
+    color: #ff3366;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #ff3366;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff6699;
+}
+
+
+#options {
+    display: none;
+    margin-top: 20px;
+}
+
+#yesButton {
+    background-color: #ff6699; 
+}
+
+#yesButton:hover {
+    background-color: #ff6699;
+}
+
+#noButton {
+    background-color: #ff6699; 
+}
+
+#noButton:hover {
+    background-color: #ff6699;
+}
+
+
+@keyframes heartAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
